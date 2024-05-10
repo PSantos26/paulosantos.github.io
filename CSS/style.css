@@ -1,0 +1,88 @@
+/* Estilos básicos para o corpo e o documento HTML */
+body, html {
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o preenchimento padrão do navegador */
+    font-family: Arial, sans-serif; /* Define a família de fontes como Arial e sans-serif como backup */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background: #0059ff; /* Cor de fundo azul para o cabeçalho */
+    color: #fff; /* Cor do texto branco */
+    padding: 10px 20px; /* Preenchimento ao redor do conteúdo do cabeçalho */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilos para a lista de navegação */
+nav ul {
+    text-align: center; /* Centraliza o texto da lista */
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    background: #1f00cf; /* Cor de fundo azul escuro para a navegação */
+    margin: 0; /* Remove a margem padrão */
+    padding: 10px; /* Preenchimento ao redor dos itens da lista */
+    overflow: hidden; /* Previne que o conteúdo transborde */
+}
+
+/* Estilos para os itens da lista de navegação */
+nav ul li {
+    display: inline; /* Mostra os itens da lista em linha */
+    margin-right: 10px; /* Margem à direita de cada item da lista */
+    padding: 10px; /* Preenchimento ao redor do texto de cada item */
+    color: #fff; /* Cor do texto branco */
+    cursor: pointer; /* Muda o cursor para indicar que o item é clicável */
+}
+
+/* Estilos para o estado hover (mouse sobre) dos itens da lista */
+nav ul li:hover {
+    color: aqua; /* Muda a cor do texto para aqua quando o mouse está sobre o item */
+}
+
+/* Estilos para o estado ativo (clicado) dos itens da lista */
+nav ul li:active {
+    color: aqua; /* Muda a cor do texto para aqua quando o item é clicado */
+}
+
+/* Estilos para as seções de conteúdo */
+.content {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 60px; /* Preenchimento ao redor do conteúdo */
+    height: 100%; /* Altura estendida ao 100% do espaço disponível */
+    background: #f4f4f4; /* Cor de fundo cinza claro */
+    min-height: 1000px; /* Altura mínima para o conteúdo */
+}
+
+/* Estilos para os parágrafos com a classe 'texto' */
+.texto {
+    display: block; /* Exibe o elemento como um bloco */
+    width: 40%; /* Define a largura como 40% do contêiner pai */
+    padding: 10px; /* Preenchimento interno */
+    margin: 10px auto; /* Margem automática para centralizar horizontalmente */
+    text-align: justify; /* Justifica o texto para alinhar ambos os lados */
+}
+
+/* Estilos comuns para inputs e textareas dentro de formulários */
+form input, form textarea {
+    display: block; /* Exibe o elemento como um bloco */
+    width: 30%; /* Define a largura como 30% do contêiner pai */
+    padding: 10px; /* Preenchimento interno */
+    margin: 10px auto; /* Margem automática para centralizar horizontalmente */
+    border-radius: 10px; /* Arredonda os cantos */
+    border: none; /* Remove a borda padrão */
+}
+
+/* Estilos para o botão dentro de formulários */
+form button {
+    display: block; /* Exibe o elemento como um bloco */
+    width: 31%; /* Define a largura como 31% para alinhar com os campos acima */
+    padding: 10px; /* Preenchimento interno */
+    margin: 10px auto; /* Margem automática para centralizar horizontalmente */
+    background: #1f00cf; /* Cor de fundo azul escuro */
+    color: #fff; /* Cor do texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 10px; /* Arredonda os cantos */
+}
+
+/* Estilo para o hover do botão */
+form button:hover {
+    background-color: #0059ff; /* Muda a cor de fundo para azul mais claro quando o mouse está sobre o botão */
+}

@@ -1,5 +1,70 @@
-<h1>Bem vindo ao meu site!</h1>
-<h2>Bem vindo ao meu site!</h2>
-<h3>Bem vindo ao meu site!</h3>
-<h4>Bem vindo ao meu site!</h4>
-<h5>Bem vindo ao meu site!</h5>
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Paulo Santos - RU: 3927311</h1>
+    </header>
+    <nav>
+        <ul>
+            <li onclick="showSection('sobre')">Sobre mim</li>
+            <!-- Item da lista que, ao ser clicado, aciona uma função JavaScript para mostrar a seção 'Sobre mim' -->
+            <li onclick="showSection('formacao')">Formação</li><!-- Similar ao anterior, mas para a seção 'Formação' -->
+            <li onclick="showSection('portfolio')">Portfólio</li>
+            <!-- Similar ao anterior, mas para a seção 'Portfólio' -->
+            <li onclick="showSection('contato')">Contato</li><!-- Similar ao anterior, mas para a seção 'Contato' -->
+        </ul>
+    </nav>
+    <section id="sobre" class="content">
+        <h2>Sobre Mim</h2>
+        <p class="texto"><strong>Paulo Henrique dos Santos</strong> é um profissional de 30 anos dedicado ao campo do
+            marketing de
+            influência, com um olhar sempre voltado para inovações e melhorias. Atualmente, ele se dedica ao estudo e
+            desenvolvimento de um SaaS, visando ampliar sua liberdade e capacidade de influência no setor.<br><br>
+
+            Com uma habilidade excepcional em design gráfico e criação de conteúdo para blogs e redes sociais, Paulo
+            também se destaca na concepção de novos produtos, seja no âmbito da programação ou do design. Seus hobbies
+            refletem seu amor pelo conhecimento e autoaperfeiçoamento, com um interesse especial por livros de autoajuda
+            e biografias inspiradoras.<br><br>
+
+            Em 2023, Paulo alcançou um marco importante ao conquistar o prêmio de melhor empresa no Reclame Aqui para a
+            Colchões Castor, uma prova de seu compromisso e excelência no trabalho. Ele acredita profundamente no poder
+            da ajuda mútua e vê nisso o potencial para transformar o mundo.<br><br>
+
+            Através de seu perfil, Paulo deseja transmitir entusiasmo e alegria, inspirando outros a perseguir seus
+            sonhos e a buscar a excelência em suas atividades. Seu compromisso com a inovação e a qualidade é a chave
+            para entender quem ele é, tanto profissional quanto pessoalmente.</p>
+    </section>
+    <section id="formacao" class="content" style="display: none;">
+        <h2>Formação</h2>
+        <p>
+            <strong>UNINTER - UNIVERSIDADE INTERNACIONAL UNINTER</strong><br>
+            Técnologo em Ánalise e Desenvolvimento de Sistemas<br>
+            Previsão de Conclusão: Dezembro/2025
+        </p>
+    </section>
+    <section id="portfolio" class="content" style="display: none;">
+        <h2>Portfólio</h2>
+        <p class="texto">Portfólio em desenvolvimento...</p>
+    </section>
+    <section id="contato" class="content" style="display: none;">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" name="name" placeholder="Seu Nome"><!-- Campo para inserir o nome -->
+            <input type="email" name="email" placeholder="Seu E-mail"><!-- Campo para inserir o email -->
+            <textarea name="message" placeholder="Sua Mensagem"></textarea><!-- Área para escrever uma mensagem -->
+            <button type="submit">Enviar</button><!-- Botão para enviar o formulário -->
+        </form>
+    </section>
+    <script src="/JS/script.js"></script>
+    <!-- Link para o arquivo JavaScript externo, que controla interações e comportamentos na página -->
+</body>
+
+</html>
